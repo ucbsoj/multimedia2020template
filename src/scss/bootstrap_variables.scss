@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+//Options here: https://getbootstrap.com/docs/4.4/getting-started/theming/#sass-options
+
+
+// Change default fonts for various font styles
+$font-family-sans-serif:  Lato, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif:       "Crimson Text", "Times New Roman", Times, serif !default;
+$font-family-monospace:   "Ubuntu Mono", Menlo, Monaco, Consolas, "Courier New", monospace !default;
+
+
+//adjust the default text color
+$text-color: #000;
+
+
+//Adjust headings styles
+$headings-font-family: 'Crimson Text', Georgia, 'Times New Roman', serif;
+$headings-font-weight: 400;
+$headings-color: #000;
+
+
+//Display fonts are when using class .display-1, .display-2
+$display1-weight: 400;
+$display2-weight: 400;
+$display3-weight: 400;
+
+
+//change the number of columns or gutter width
+$grid-columns:       12;
+$grid-gutter-width:  30px;
+
+
+//Breakpoints in which each measure will "snap" to a mobile view
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+// Define the maximum width of `.container` for different screen sizes.
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+//use RFS responsive font styles
+$enable-responsive-font-sizes: true;
+$enable-shadows: true;
+
+//import the bootstrap library (above variables will override these)
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//import Google fonts (which are set in Gruntfile.js)
+@import "../fonts/fonts";
+
+//import custom styles
+@import "../css/style";
