@@ -1,6 +1,4 @@
-html, body{
-	overflow-x: hidden;
-}
+
 
 /** clearfix for position:sticky **/
 .sticky:before,
@@ -38,5 +36,7 @@ html, body{
 }
 
 
-
-/** flex center **/
+/** Sticky for scrollytelling layout **/
+[data-sticky-graphic] {
+	top: 35%;
+}
